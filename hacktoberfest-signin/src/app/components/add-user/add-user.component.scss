@@ -1,7 +1,11 @@
 .user-form {
     display: flex;
     flex-direction: column;
+    
     align-items: center; 
+    padding: 50px;
+    border-radius: 10px;
+    
 
     p {
         text-align: center;
@@ -12,20 +16,20 @@
         padding: 5px;
         margin: 10px;
         width: 175px;
-        background-color: whitesmoke;
+        background-color: #D6D6B1;
         border-radius: 15px;
         border: none;
     }
 
     input[type="submit"] {
-        background-color: #C26DBC;
+        background-color: #DE541E;
         border: none;
         border-radius: 15px;
         padding: 10px;
         color: #f3f3f3;
         
         &:hover {
-            background-color: #d836d0;
+            background-color: #d88e3f;
         }
     }
     
@@ -33,5 +37,5 @@
 }
 
 * {
-    background-color: #C8F4F9;
+    background-color: #878472;;
 }
