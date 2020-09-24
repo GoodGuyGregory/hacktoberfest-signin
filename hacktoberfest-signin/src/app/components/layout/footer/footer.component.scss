@@ -2,5 +2,10 @@
     display: block;
     background-color: #EEB5EB;
     padding: 2em 0;
-    margin-bottom: 0;
+    height: 50px;
+    grid-row-start: 2;
+}
+
+.footer {
+    grid-row-start: 2;
 }
