@@ -1,0 +1,35 @@
+.user-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    p {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    input[type="text"] {
+        padding: 5px;
+        margin: 10px;
+        width: 175px;
+        background-color: whitesmoke;
+    }
+
+    input[type="submit"] {
+        background-color: #C26DBC;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        color: #f3f3f3;
+        
+        &:hover {
+            background-color: #d836d0;
+        }
+    }
+    
+    
+}
+
+* {
+    background-color: #C8F4F9;
+}
