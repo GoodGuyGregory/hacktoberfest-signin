@@ -5,7 +5,7 @@
     align-items: center; 
     padding: 50px;
     border-radius: 10px;
-    
+    margin: 25px;
 
     p {
         text-align: center;
@@ -13,9 +13,10 @@
     }
 
     input[type="text"] {
-        padding: 5px;
-        margin: 10px;
-        width: 175px;
+        text-align: center;
+        padding: 8px;
+        margin: 20px;
+        width: 255px;
         background-color: #D6D6B1;
         border-radius: 15px;
         border: none;
@@ -25,6 +26,7 @@
         background-color: #DE541E;
         border: none;
         border-radius: 15px;
+        width: 125px;
         padding: 10px;
         color: #f3f3f3;
         
