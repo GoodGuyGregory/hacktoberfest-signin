@@ -9,7 +9,18 @@ export class AddUserComponent implements OnInit {
 
   constructor() { }
 
+  // toggle for searchUser div
+  searchUser = true;
+  // toggle for finding the User
+  foundUser = false;
+
   ngOnInit(): void {
+  }
+
+  findUser() {
+    this.searchUser = !this.searchUser;
+
+
   }
 
 }

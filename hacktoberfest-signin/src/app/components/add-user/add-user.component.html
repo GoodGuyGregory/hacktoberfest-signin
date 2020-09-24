@@ -1,7 +1,15 @@
 <!-- (ngSubmit)="onSubmit() -->
-<form class="user-form">
-    <p class="PressStart">Github Username</p>
-    <input type="text" class="PressStart">
-    <input type="submit" value="Search" class="search-Button">
-
-</form>
+<div class="find-user" *ngIf="searchUser">
+    <form class="user-form">
+        <p class="PressStart">Github Username</p>
+        <input type="text" class="PressStart">
+        <input type="submit" value="Search" class="search-Button" (click)="findUser()">
+    </form>
+</div>
+<div class="found-user" *ngIf="foundUser">
+    <form class="user-form">
+        <p class="PressStart">Github Username</p>
+        <input type="text" class="PressStart">
+        <input type="submit" value="Search" class="search-Button" (click)="findUser()">
+    </form>
+</div>
