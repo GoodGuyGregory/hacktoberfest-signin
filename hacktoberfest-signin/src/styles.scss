@@ -5,3 +5,22 @@
     padding: 0;
     background:#D6D6B1;
 }
+
+// Custom Added Fonts
+@font-face {
+    font-family: PressStart2P;
+    src: url(assets/fonts/PressStart2P-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(assets/fonts/Quicksand-VariableFont_wght.ttf) format('truetype');
+}
+
+.PressStart {
+    font-family: PressStart2P;
+}
+
+.Quicksand {
+    font-family: Quicksand;
+}
