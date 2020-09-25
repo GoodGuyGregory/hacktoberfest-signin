@@ -9,6 +9,7 @@ export class GithubService {
   constructor() {
 
   }
+
   getUserAvatar() {
     return "returning username.urlAvatar";
   }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from '../../services/github.service';
+import { User } from '../../models/User';
 
 @Component({
   selector: 'app-add-user',
@@ -6,19 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./add-user.component.scss']
 })
 export class AddUserComponent implements OnInit {
+  user: User;
 
-  constructor() { }
+  constructor(private githubservice: GithubService) { }
 
   // toggle for searchUser div
-  searchUser = true;
+  searchUser: boolean = true;
   // toggle for finding the User
-  foundUser = false;
+  foundUser: boolean = false;
+  username: string;
 
   ngOnInit(): void {
   }
 
-  findUser() {
+  findUser(data) {
     this.searchUser = !this.searchUser;
+    // TODO Confirm User Name Matches String Sent from databinding
+
+    this.username = data.username;
+    this.foundUser = true;
 
 
   }
