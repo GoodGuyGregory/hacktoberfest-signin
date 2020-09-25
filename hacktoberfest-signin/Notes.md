@@ -9,6 +9,8 @@
 
 **Problem Getting JSON Response Data Back from Github REST API**
 
+[HTTPModule Documentation Example](https://www.tutorialspoint.com/angular7/angular7_http_client.htm)
+
  the first parameters of function JSON.parse should be a String, and your data is a JavaScript object, so it will convert to a String [object object], you should use JSON.stringify before pass the data
 
 `JSON.parse(JSON.stringify(userData))`
