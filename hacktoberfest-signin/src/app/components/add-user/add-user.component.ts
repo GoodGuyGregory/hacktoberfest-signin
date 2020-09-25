@@ -33,7 +33,11 @@ export class AddUserComponent implements OnInit {
       console.log(user);
       this.heroimage = user.avatar_url;
     });
+  }
 
+  searchAgain() {
+    this.searchUser = true;
+    this.foundUser = false;
   }
 
 }

@@ -54,8 +54,13 @@
         border-radius: 10px;
         margin: 100px 25px;
         text-align: center;
+        
+        p {
+            font-size: 25px;
+        }
 
         .github-avatar{ 
+
 
             img {
                 border-radius: 50%;
@@ -65,27 +70,47 @@
                 padding: 2.5em;
             }
 
+            .found-name {
+                font-size: 20px;
+            }
             
-                    input[type="submit"] {
+            button {
+                    align-items: center;
+                    flex-direction: row;
+                    background-color: #5ebf4b;
+                    border: none;
+                    border-radius: 15px;
+                    width: 70px;
+                    margin: 25px 5px 15px;
+                    padding: 10px;
+                    font-weight: bold; 
+                    color: #f3f3f3;
+                    
+                    &:hover {
+                        background-color: #3fd87c;
+                    }
+                    &:last-of-type {
                         align-items: center;
                         flex-direction: row;
-                        background-color: #DE541E;
+                        background-color: #df6060;
                         border: none;
                         border-radius: 15px;
-                        width: 125px;
-                        margin: 15px;
+                        width: 70px;
+                        margin: 25px 5px 15px;
                         padding: 10px;
                         font-weight: bold; 
                         color: #f3f3f3;
                         
                         &:hover {
-                            background-color: #d88e3f;
+                            background-color: #d53518;
                         }
                     }
+                }
+            }
+                        
+                    
         }
     }
-    
-}
 
 * {
     background-color: #878472;;

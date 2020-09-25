@@ -7,16 +7,17 @@
     </form>
 </div>
 <div class="found-user" *ngIf="foundUser">
-    <form class="user-form">
+    <form class="user-form" (ngSubmit)="searchAgain()">
         <p class="PressStart">Is This Your Username?</p>
         <!--  Github Image -->
         <div class="github-avatar">
             <img [src]="heroimage" alt="github avatar image">
 
             <!-- Display Bounded Username -->
-            <p class="PressStart">{{username}}</p>
-            <input type="submit" value="Yes" class="confirmation-button">
-            <input type="submit" value="No" class="confirmation-button">
+            <p class="PressStart found-name">{{username}}</p>
+            <button class="confirmation-button" routerLink="/">Yes</button>
+            <button type="submit" class="confirmation-button">No</button>
+
         </div>
     </form>
 </div>
