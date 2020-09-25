@@ -1,42 +1,70 @@
-.user-form {
-    display: flex;
-    flex-direction: column;
+.find-user {
+    border-radius: 25px;
     
-    align-items: center; 
-    padding: 50px;
-    border-radius: 10px;
-    margin: 100px 25px;
-
-    p {
-        text-align: center;
-        font-size: 1.2em;
-        padding: 15px;
-    }
-
-    input[type="text"] {
-        text-align: center;
-        padding: 8px;
-        margin: 20px;
-        width: 255px;
-        background-color: #D6D6B1;
-        border-radius: 15px;
-        border: none;
-    }
-
-    input[type="submit"] {
-        background-color: #DE541E;
-        border: none;
-        border-radius: 15px;
-        width: 125px;
-        padding: 10px;
-        font-weight: bold; 
-        color: #f3f3f3;
+    .user-form {
+        display: flex;
+        flex-direction: column;
         
-        &:hover {
-            background-color: #d88e3f;
+        align-items: center; 
+        padding: 50px;
+        border-radius: 10px;
+        margin: 100px 25px;
+    
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            padding: 15px;
+        }
+    
+        input[type="text"] {
+            text-align: center;
+            padding: 8px;
+            margin: 20px;
+            width: 255px;
+            background-color: #D6D6B1;
+            border-radius: 15px;
+            border: none;
+        }
+    
+        input[type="submit"] {
+            background-color: #DE541E;
+            border: none;
+            border-radius: 15px;
+            width: 125px;
+            padding: 10px;
+            font-weight: bold; 
+            color: #f3f3f3;
+            
+            &:hover {
+                background-color: #d88e3f;
+            }
         }
     }
-    
+}
+
+
+.found-user {
+    border-radius: 25px;
+
+    .user-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 50px;
+        border-radius: 10px;
+        margin: 100px 25px;
+
+    .github-avatar{ 
+        img {
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+
+            padding: 2.5em;
+        }
+
+    }
+}
     
 }
 

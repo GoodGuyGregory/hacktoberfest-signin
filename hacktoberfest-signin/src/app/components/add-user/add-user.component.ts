@@ -10,13 +10,14 @@ import { User } from '../../models/User';
 export class AddUserComponent implements OnInit {
   user: User;
 
-  constructor(private githubservice: GithubService) { }
+  constructor(private githubService: GithubService) { }
 
   // toggle for searchUser div
   searchUser: boolean = true;
   // toggle for finding the User
   foundUser: boolean = false;
   username: string;
+  heroimage: string;
 
   ngOnInit(): void {
   }
@@ -27,7 +28,7 @@ export class AddUserComponent implements OnInit {
 
     this.username = data.username;
     this.foundUser = true;
-
+    this.heroimage = this.githubService.getUserAvatar();
 
   }
 

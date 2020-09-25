@@ -1,19 +1,20 @@
-<div>
-    <!-- (ngSubmit)="onSubmit() -->
-    <div class="find-user" *ngIf="searchUser">
-        <form #username="ngForm" class="user-form" (ngSubmit)="findUser(username.value)">
-            <p class="PressStart">Github Username</p>
-            <input type="text" class="PressStart" placeholder="username" name="username" ngModel>
-            <input type="submit" value="Search" class="search-Button">
-        </form>
-    </div>
-    <div class="found-user" *ngIf="foundUser">
-        <form class="user-form">
-            <p class="PressStart">Is This Your Username?</p>
-            <!-- Display Bounded Username -->
-            <p class="PressStart">{{username}}</p>
-        </form>
+<!-- (ngSubmit)="onSubmit() -->
+<div class="find-user" *ngIf="searchUser">
+    <form #username="ngForm" class="user-form" (ngSubmit)="findUser(username.value)">
+        <p class="PressStart">Github Username</p>
+        <input type="text" class="PressStart" placeholder="username" name="username" ngModel>
+        <input type="submit" value="Search" class="search-Button">
+    </form>
+</div>
+<div class="found-user" *ngIf="foundUser">
+    <form class="user-form">
+        <p class="PressStart">Is This Your Username?</p>
         <!--  Github Image -->
-        <!-- <img src="" alt=""> -->
-    </div>
+        <div class="github-avatar">
+            <img [src]="heroimage" alt="github avatar image">
+        </div>
+        <!-- Display Bounded Username -->
+        <p class="PressStart">{{username}}</p>
+    </form>
+    <!-- <img src="" alt=""> -->
 </div>
