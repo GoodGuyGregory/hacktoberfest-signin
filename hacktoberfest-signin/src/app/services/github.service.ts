@@ -1,19 +1,23 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/User';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GithubService {
 
-  constructor() {
+  githubUrl: string = 'https://api.github.com/users/';
+
+  constructor(private http: HttpClient) {
 
   }
 
-  getUserAvatar() {
-    let userResult = '';
-    userResult = "https://i1.wp.com/www.comicon.com/wp-content/uploads/2020/03/image.jpg?fit=1200%2C665";
-    return userResult;
-
+  getUserAvatar(username: string): Observable<any> {
+    let userRequested = username.toLowerCase();
+    this.githubUrl += `${userRequested}`;
+    let userData = this.http.get(this.githubUrl)
+    return userData;
   }
 }

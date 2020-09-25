@@ -28,7 +28,11 @@ export class AddUserComponent implements OnInit {
 
     this.username = data.username;
     this.foundUser = true;
-    this.heroimage = this.githubService.getUserAvatar();
+    this.githubService.getUserAvatar(this.username).subscribe(userData => {
+      let user = JSON.parse(JSON.stringify(userData));
+      console.log(user);
+      this.heroimage = user.avatar_url;
+    });
 
   }
 
