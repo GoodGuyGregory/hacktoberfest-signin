@@ -53,18 +53,37 @@
         padding: 50px;
         border-radius: 10px;
         margin: 100px 25px;
+        text-align: center;
 
-    .github-avatar{ 
-        img {
-            border-radius: 50%;
-            height: 300px;
-            width: 300px;
+        .github-avatar{ 
 
-            padding: 2.5em;
+            img {
+                border-radius: 50%;
+                height: 300px;
+                width: 300px;
+
+                padding: 2.5em;
+            }
+
+            
+                    input[type="submit"] {
+                        align-items: center;
+                        flex-direction: row;
+                        background-color: #DE541E;
+                        border: none;
+                        border-radius: 15px;
+                        width: 125px;
+                        margin: 15px;
+                        padding: 10px;
+                        font-weight: bold; 
+                        color: #f3f3f3;
+                        
+                        &:hover {
+                            background-color: #d88e3f;
+                        }
+                    }
         }
-
     }
-}
     
 }
 
