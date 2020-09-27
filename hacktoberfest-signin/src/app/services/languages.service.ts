@@ -1,4 +1,4 @@
-import { Injectable, Injectable, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -41,7 +41,7 @@ let languageData: LanguagesData[] = [{
 
 @Injectable()
 export class LanguageService {
-  getLanuageData(): LanguagesData[] {
+  getLanguageData(): LanguagesData[] {
     return languageData;
   }
 }
