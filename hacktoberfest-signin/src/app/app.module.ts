@@ -11,6 +11,8 @@ import { LoginComponent } from './components/pages/login/login.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { UsersComponent } from './components/users/users.component';
 import { FormsModule } from '@angular/forms';
+import { GraphComponent } from './components/pages/graph/graph.component';
+import { LanguagesdataComponent } from './components/languagesdata/languagesdata.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     LoginComponent,
     AddUserComponent,
-    UsersComponent
+    UsersComponent,
+    GraphComponent,
+    LanguagesdataComponent
   ],
   imports: [
     BrowserModule,
