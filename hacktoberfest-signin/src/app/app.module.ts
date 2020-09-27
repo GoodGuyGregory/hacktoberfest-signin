@@ -14,6 +14,10 @@ import { FormsModule } from '@angular/forms';
 import { GraphComponent } from './components/pages/graph/graph.component';
 import { LanguagesdataComponent } from './components/languagesdata/languagesdata.component';
 
+// DevExtreme Modules:
+import { DxPolarChartModule } from 'devextreme-angular';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +34,8 @@ import { LanguagesdataComponent } from './components/languagesdata/languagesdata
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    DxPolarChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
