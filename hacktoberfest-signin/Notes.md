@@ -22,3 +22,7 @@
 **Problem Angular Dev Kit Issues**
 
 [Installation Commands to Fix Issues](https://www.thecodebuzz.com/cannot-find-module-angular-devkit-build-angular-package-json/)
+
+*Installing and Rendering DevExtreme**
+
+[Node Commands for Dependency Injection](https://js.devexpress.com/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/)
