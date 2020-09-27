@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './components/pages/welcome/welcome.component';
 import { LoginComponent } from './components/pages/login/login.component';
+import { GraphComponent } from './components/pages/graph/graph.component';
 
 const routes: Routes = [
   {
@@ -9,6 +10,9 @@ const routes: Routes = [
   },
   {
     path: 'login', component: LoginComponent
+  },
+  {
+    path: 'graph', component: GraphComponent
   }
 ];
 
