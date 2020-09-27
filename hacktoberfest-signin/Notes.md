@@ -18,3 +18,7 @@
 **Solution**
 
 [Getting JSON Responses from HTTPClient Module](https://stackoverflow.com/questions/38380462/syntaxerror-unexpected-token-o-in-json-at-position-1)
+
+**Problem Angular Dev Kit Issues**
+
+[Installation Commands to Fix Issues](https://www.thecodebuzz.com/cannot-find-module-angular-devkit-build-angular-package-json/)
