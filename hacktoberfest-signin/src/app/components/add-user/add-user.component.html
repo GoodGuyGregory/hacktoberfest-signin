@@ -1,4 +1,3 @@
-<!-- (ngSubmit)="onSubmit() -->
 <div class="find-user" *ngIf="searchUser">
     <form #username="ngForm" class="user-form" (ngSubmit)="findUser(username.value)">
         <p class="PressStart">Github Username</p>
@@ -12,13 +11,234 @@
         <!--  Github Image -->
         <div class="github-avatar">
             <img [src]="heroimage" alt="github avatar image">
-
             <!-- Display Bounded Username -->
             <p class="PressStart found-name">{{username}}</p>
             <!-- Add User Data from Question to Graph -->
-            <button class="confirmation-button" routerLink="/graph">Yes</button>
+            <button class="confirmation-button" (click)="setUserName()">Yes</button>
             <button type="submit" class="confirmation-button">No</button>
-
         </div>
     </form>
+</div>
+
+<div class="question-user" *ngIf="questionUser">
+    <div class="language-form">
+        <p class="PressStart header-text">Rank Your Language Experience:</p>
+        <form>
+            <p>Python:
+                <label for="1">
+                    <input type="radio" name="ranking" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="5">
+                    5
+                </label>
+            </p>
+        </form>
+        <form>
+            <p>Java:
+                <label>
+                    <input type="radio" name="ranking" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="5">
+                    5
+                </label>
+            </p>
+        </form>
+        <form>
+            <p>C++:
+                <label>
+                    <input type="radio" name="ranking" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="5">
+                    5
+                </label>
+            </p>
+        </form>
+        <form>
+            <p>F#:
+                <label>
+                    <input type="radio" name="ranking" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="5">
+                    5
+                </label>
+            </p>
+        </form>
+        <form>
+            <p>Ruby:
+                <label>
+                    <input type="radio" name="ranking" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="5">
+                    5
+                </label>
+            </p>
+        </form>
+        <form>
+            <p>Swift:
+                <label>
+                    <input type="radio" name="ranking" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="5">
+                    5
+                </label>
+            </p>
+        </form>
+        <form>
+            <p>Go:
+                <label>
+                    <input type="radio" name="ranking" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="5">
+                    5
+                </label>
+            </p>
+        </form>
+        <form>
+            <p>Javascript:
+                <label>
+                    <input type="radio" name="ranking" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="5">
+                    5
+                </label>
+            </p>
+        </form>
+        <form>
+            <p>C#:
+                <label>
+                    <input type="radio" name="ranking" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="ranking" value="5">
+                    5
+                </label>
+            </p>
+            <button type="submit" routerLink="/graph" class="confirm-languages">Submit</button>
+        </form>
+    </div>
 </div>

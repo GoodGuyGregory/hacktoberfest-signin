@@ -112,6 +112,46 @@
         }
     }
 
+.question-user{
+    border-radius: 25px;
+
+    .language-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 50px;
+        border-radius: 10px;
+        margin: 100px 25px;
+        text-align: center;
+        
+
+        .header-text {
+            font-size: 20px;
+            padding: 25px;
+        }
+
+        form {
+                
+            p {
+                font-family: 'Quicksand';
+                padding: 5px;
+                font-weight: 200;
+            }
+
+            .confirm-languages {
+                background-color: #DE541E;
+                border: none;
+                border-radius: 15px;
+                width: 70px;
+                margin: 25px 5px 15px;
+                padding: 10px;
+                font-weight: bold; 
+                color: #f3f3f3;
+            }
+        }
+    }
+}
+
 * {
     background-color: #878472;;
 }
