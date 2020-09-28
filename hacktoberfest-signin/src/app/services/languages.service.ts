@@ -1,29 +1,27 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/User';
+import { UserService } from '../services/user.service';
 
 @Injectable({
   providedIn: 'root'
 })
 
 
+
+
 export class LanguagesData {
   // Import User Data to component
   arg: string;
-  goodguygregory: User;
-  jeffusername: number;
+  // Pull Request Added Users:
+  goodguygregory: number;
+
 }
 
-var polarChartOptions = {
-  commonAxisSettings: {
-    grid: {
-      visible: true
-    }
-  }
-}
 
 let languageData: LanguagesData[] = [{
   arg: "Python",
-  goodguygregory: 5
+  goodguygregory: 5,
+
 }, {
   arg: "Java",
   goodguygregory: 4
