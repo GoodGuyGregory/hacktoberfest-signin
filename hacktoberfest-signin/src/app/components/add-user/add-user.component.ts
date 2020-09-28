@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../../services/github.service';
+import { UserService } from '../../services/user.service';
 import { User } from '../../models/User';
 
 
@@ -10,7 +11,7 @@ import { User } from '../../models/User';
 })
 export class AddUserComponent implements OnInit {
 
-  constructor(private githubService: GithubService) { }
+  constructor(private githubService: GithubService, private userService: UserService) { }
   // Creates instance of a user object
   user: User;
 
@@ -70,49 +71,54 @@ export class AddUserComponent implements OnInit {
   // Language Data from Users
   setUserPythonLanguageRating(entry): void {
     this.user.languages.python = entry;
-    console.log(this.user);
+    // console.log(this.user);
   }
 
   setUserJavaLanguageRating(entry): void {
     this.user.languages.java = entry;
-    console.log(this.user);
+    // console.log(this.user);
   }
 
   setUserCplusplusLanguageRating(entry): void {
     this.user.languages["c++"] = entry;
-    console.log(this.user);
+    // console.log(this.user);
   }
 
   setUserFsharpLanguageRating(entry): void {
     this.user.languages["f#"] = entry;
-    console.log(this.user);
+    // console.log(this.user);
   }
 
   setUserRubyLanguageRating(entry): void {
     this.user.languages.ruby = entry;
-    console.log(this.user);
+    // console.log(this.user);
   }
 
   setUserSwiftLanguageRating(entry): void {
     this.user.languages.swift = entry;
-    console.log(this.user);
+    // console.log(this.user);
   }
 
   setUserGoLanguageRating(entry): void {
     this.user.languages.go = entry;
-    console.log(this.user);
+    // console.log(this.user);
   }
 
   setUserJavascriptLanguageRating(entry): void {
     this.user.languages.javascript = entry;
-    console.log(this.user);
+    // console.log(this.user);
   }
 
   setUserCsharpLanguageRating(entry): void {
     this.user.languages["c#"] = entry;
-    console.log(this.user);
+    // console.log(this.user);
   }
 
+  pushToService() {
+    console.log(this.user);
+    console.log(this.userService.createUser(this.user));
+
+  }
 
 
 }
