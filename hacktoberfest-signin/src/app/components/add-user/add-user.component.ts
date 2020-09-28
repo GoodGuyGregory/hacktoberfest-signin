@@ -69,49 +69,50 @@ export class AddUserComponent implements OnInit {
 
   // Language Data from Users
   setUserPythonLanguageRating(entry): void {
-    this.user.language.python = entry;
+    this.user.languages.python = entry;
     console.log(this.user);
   }
 
   setUserJavaLanguageRating(entry): void {
-    this.user.language.java = entry;
+    this.user.languages.java = entry;
     console.log(this.user);
   }
 
   setUserCplusplusLanguageRating(entry): void {
-    this.user.language["c++"] = entry;
+    this.user.languages["c++"] = entry;
     console.log(this.user);
   }
 
   setUserFsharpLanguageRating(entry): void {
-    this.user.language["f#"] = entry;
+    this.user.languages["f#"] = entry;
     console.log(this.user);
   }
 
   setUserRubyLanguageRating(entry): void {
-    this.user.language.ruby = entry;
+    this.user.languages.ruby = entry;
     console.log(this.user);
   }
 
   setUserSwiftLanguageRating(entry): void {
-    this.user.language.swift = entry;
+    this.user.languages.swift = entry;
     console.log(this.user);
   }
 
   setUserGoLanguageRating(entry): void {
-    this.user.language.go = entry;
+    this.user.languages.go = entry;
     console.log(this.user);
   }
 
   setUserJavascriptLanguageRating(entry): void {
-    this.user.language.javascript = entry;
+    this.user.languages.javascript = entry;
     console.log(this.user);
   }
 
   setUserCsharpLanguageRating(entry): void {
-    this.user.language["c#"] = entry;
+    this.user.languages["c#"] = entry;
     console.log(this.user);
   }
+
 
 
 }
