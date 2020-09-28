@@ -1,6 +1,16 @@
 export class User {
-    id: number;
     heroimage: string;
     username: string;
-    languages: [];
+    languages: {
+        "python": number,
+        "java": number,
+        "c++": number,
+        "f#": number,
+        "ruby": number,
+        "swift": number,
+        "go": number,
+        "javascript": number,
+        "c#": number,
+    }
+
 }
