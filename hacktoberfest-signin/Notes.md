@@ -26,3 +26,7 @@
 *Installing and Rendering DevExtreme**
 
 [Node Commands for Dependency Injection](https://js.devexpress.com/Documentation/Guide/Angular_Components/Getting_Started/Add_DevExtreme_to_an_Angular_CLI_Application/)
+
+**Problems with Radio Button Databinding**
+
+[Databinding for Radio Buttons](https://stackoverflow.com/questions/43095710/how-correctly-bind-data-to-radio-buttons-in-angular2)
