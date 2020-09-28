@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~10.0.11",
     "@angular/platform-browser-dynamic": "~10.0.11",
     "@angular/router": "~10.0.11",
+    "devexpress-diagram": "^1.0.16",
     "devextreme": "20.1-stable",
     "devextreme-angular": "^20.1.7",
     "rxjs": "~6.5.5",

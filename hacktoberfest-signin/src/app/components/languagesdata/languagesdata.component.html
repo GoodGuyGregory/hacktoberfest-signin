@@ -1,12 +1,11 @@
-<div>
-    <dx-polar-chart id="chart" [useSpiderWeb]="true" title="Programming Languages from Github Users"
-        [dataSource]="languageData">
+<div class="graph-container">
+    <dx-polar-chart id="chart" [useSpiderWeb]="true" [dataSource]="languageData" color="#f3f3f3">
         <!-- *ngFor Users  -->
-        <dxi-series valueField="java" name="Java"></dxi-series>
-        <dxi-series valueField="python" name="Python"></dxi-series>
+        <dxi-series valueField="goodguygregory" name="GoodGuyGregory"></dxi-series>
+        <dxi-series valueField="jeffusername" name="Jeffusername"></dxi-series>
         <dxi-series valueField="lemons" name="Lemons"></dxi-series>
         <dxi-series valueField="oranges" name="Oranges"></dxi-series>
-        <dxo-common-series-settings type="line"></dxo-common-series-settings>
+        <dxo-common-series-settings type="line" grid="visible"></dxo-common-series-settings>
         <dxo-tooltip [enabled]="true"></dxo-tooltip>
     </dx-polar-chart>
 </div>

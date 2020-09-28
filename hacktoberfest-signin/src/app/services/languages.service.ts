@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { User } from '../models/User';
 
 @Injectable({
   providedIn: 'root'
@@ -8,72 +9,48 @@ import { Injectable } from '@angular/core';
 export class LanguagesData {
   // Import User Data to component
   arg: string;
-  java: number;
-  Python: number;
-  Go: number;
-  Cplusplus: number;
-  Sql: number;
+  goodguygregory: User;
+  jeffusername: number;
+}
 
+var polarChartOptions = {
+  commonAxisSettings: {
+    grid: {
+      visible: true
+    }
+  }
 }
 
 let languageData: LanguagesData[] = [{
   arg: "Python",
-  java: 1.0,
-  Python: 1.0,
-  Go: 1.0,
-  Cplusplus: 1.0,
-  Sql: 1.0,
+  goodguygregory: 5
 }, {
   arg: "Java",
-  java: 2.0,
-  Python: 3.0,
-  Go: 3.0,
-  Cplusplus: 5.0,
-  Sql: 8.0,
+  goodguygregory: 4
 }, {
   arg: "C++",
-  java: 4.0,
-  Python: 2.0,
-  Go: 3.0,
-  Cplusplus: 7.0,
-  Sql: 9.0,
+  goodguygregory: 2,
 }, {
-  arg: "F #",
-  java: 4.0,
-  Python: 2.0,
-  Go: 3.0,
-  Cplusplus: 7.0,
-  Sql: 9.0,
-
+  arg: "F#",
+  goodguygregory: 1
 },
 {
   arg: "Ruby",
-  java: 4.0,
-  Python: 2.0,
-  Go: 3.0,
-  Cplusplus: 7.0,
-  Sql: 9.0,
+  goodguygregory: 3
 }, {
   arg: "Swift",
-  java: 4.0,
-  Python: 2.0,
-  Go: 3.0,
-  Cplusplus: 7.0,
-  Sql: 9.0,
-}, {
+  goodguygregory: 0
+},
+{
   arg: "Go",
-  java: 4.0,
-  Python: 2.0,
-  Go: 3.0,
-  Cplusplus: 7.0,
-  Sql: 9.0,
+  goodguygregory: 3
 }, {
   arg: "Javascript",
-  java: 4.0,
-  Python: 2.0,
-  Go: 3.0,
-  Cplusplus: 7.0,
-  Sql: 9.0,
+  goodguygregory: 5
+},
+{
+  arg: "C#",
+  goodguygregory: 2
 }];
 
 @Injectable()

@@ -1,5 +1,4 @@
 import { Component, OnInit, NgModule } from '@angular/core';
-import { DxPolarChartModule } from 'devextreme-angular';
 
 // Services
 import { LanguagesData, LanguageService } from '../../services/languages.service';
