@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/User';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,11 +10,12 @@ export class UserService {
 
   user: User;
   currentUsers: User[];
+  userDataUrl: string = '../assets/users.json';
 
 
   // TODO: HTTPservices for JSON
 
-  constructor() {
+  constructor(private http: HttpClient) {
     this.currentUsers = [];
   }
 
@@ -35,10 +37,28 @@ export class UserService {
       }
 
     }
+    // Pushes the user to the array of existing users
     this.currentUsers.push(newUser);
     return `added ${user.username} to currentUsers`;
   }
 
 
+  // GET request from the JSON data
+  //  and new users recently added
+  getUsers(): void {
+    // Connects to Local hosted data
+    let existingUsers = this.http.get(this.userDataUrl).subscribe(userData => {
+      let users = JSON.parse(JSON.stringify(userData));
+      console.log(users);
+      console.log(existingUsers);
 
+      // Push ExistingUsers to the currentUsers[]
+    });
+  }
+
+  // getLanguageData: 
+  // Returns the elements inside of the currentUsers[] for languagesData Component 
+  getLanguageData() {
+
+  }
 }

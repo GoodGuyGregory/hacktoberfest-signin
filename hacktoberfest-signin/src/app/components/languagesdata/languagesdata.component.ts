@@ -1,22 +1,23 @@
 import { Component, OnInit, NgModule } from '@angular/core';
+import { User } from 'src/app/models/User';
+// Services:
+import { currentUsers, UserService } from 'src/app/services/user.service';
 
-// Services
-import { LanguagesData, LanguageService } from '../../services/languages.service';
 
 @Component({
   selector: 'app-languagesdata',
   templateUrl: './languagesdata.component.html',
   styleUrls: ['./languagesdata.component.scss'],
-  providers: [LanguageService]
+  providers: [UserService]
 })
 
 export class LanguagesdataComponent implements OnInit {
   // gets service data
-  languageData: LanguagesData[];
+  languageData: currentUsers[];
 
-  constructor(private languageService: LanguageService) {
+  constructor(private userService: UserService) {
     // set service data
-    this.languageData = languageService.getLanguageData();
+    this.languageData = userService.getLanguageData();
   }
 
   ngOnInit(): void {
