@@ -36,8 +36,8 @@ export class AddUserComponent implements OnInit {
     this.foundUser = true;
     this.githubService.getUserAvatar(this.username).subscribe(userData => {
       let user = JSON.parse(JSON.stringify(userData));
-      console.log("Found that user!");
-      console.log(user);
+      // console.log(`Found ${user.username} user!`);
+      // console.log(user);
       this.heroimage = user.avatar_url;
     });
   }
@@ -116,11 +116,11 @@ export class AddUserComponent implements OnInit {
   }
 
   pushToService() {
-    console.log(this.user);
+    // console.log(JSON.stringify(this.user));
     // Pushed User to CurrentUsers Array
-    console.log(`Pushed ${this.user} to the currentUsers Array`)
+    console.log(`Pushing ${JSON.stringify(this.user)} to the currentUsers Array`);
     console.log(this.userService.createUser(this.user));
-    // this.userService.getUsers();
+    console.log(this.userService.getUsers());
   }
 
 

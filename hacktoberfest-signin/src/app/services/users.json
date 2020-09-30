@@ -1,0 +1,47 @@
+[
+    {
+        "heroimage": "https://avatars0.githubusercontent.com/u/36649901?v=4",
+        "username": "GoodGuyGregory",
+        "languages": {
+            "python": 4,
+            "java": 3,
+            "c++": 3,
+            "f#": 2,
+            "ruby": 3,
+            "swift": 1,
+            "go": 3,
+            "javascript": 4,
+            "c#": 3
+        }
+    },
+    {
+        "heroimage": "https://avatars0.githubusercontent.com/u/36649901?v=4",
+        "username": "SamuraiJack",
+        "languages": {
+            "python": 2,
+            "java": 2,
+            "c++": 2,
+            "f#": 2,
+            "ruby": 2,
+            "swift": 2,
+            "go": 2,
+            "javascript": 2,
+            "c#": 2
+        }
+    },
+    {
+        "heroimage": "https://avatars0.githubusercontent.com/u/36649901?v=4",
+        "username": "AmericanFootball",
+        "languages": {
+            "python": 3,
+            "java": 3,
+            "c++": 3,
+            "f#": 3,
+            "ruby": 3,
+            "swift": 3,
+            "go": 3,
+            "javascript": 3,
+            "c#": 3
+        }
+    }
+]

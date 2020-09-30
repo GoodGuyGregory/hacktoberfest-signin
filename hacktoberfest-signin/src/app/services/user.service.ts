@@ -10,13 +10,13 @@ export class UserService {
 
   user: User;
   currentUsers: User[];
-  userDataUrl: string = '../assets/users.json';
-
+  existingUsers: [];
 
   // TODO: HTTPservices for JSON
 
   constructor(private http: HttpClient) {
     this.currentUsers = [];
+    this.existingUsers
   }
 
   createUser(user: User): string {
@@ -33,28 +33,22 @@ export class UserService {
         "go": user.languages.go,
         "javascript": user.languages.javascript,
         "c#": user.languages["c#"],
-
       }
-
     }
     // Pushes the user to the array of existing users
     this.currentUsers.push(newUser);
-    return `added ${user.username} to currentUsers ${this.currentUsers.length}`;
+    return `added ${user.username} to currentUsers array of size ${this.currentUsers.length}`;
   }
 
 
   // GET request from the JSON data
   //  and new users recently added
-  getUsers(): void {
+  getUsers(): Observable<any> {
     // Connects to Local hosted data
-    let existingUsers = this.http.get(this.userDataUrl).subscribe(userData => {
-      let users = JSON.parse(JSON.stringify(userData));
-      console.log(users);
-      console.log(existingUsers);
-
-      // Push ExistingUsers to the currentUsers[]
-    });
+    return this.http.get("./users.json");
   }
+
+
 
   // getLanguageData: 
   // Returns the elements inside of the currentUsers[] for languagesData Component 
