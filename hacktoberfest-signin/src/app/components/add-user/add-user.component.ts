@@ -117,8 +117,10 @@ export class AddUserComponent implements OnInit {
 
   pushToService() {
     console.log(this.user);
+    // Pushed User to CurrentUsers Array
+    console.log(`Pushed ${this.user} to the currentUsers Array`)
     console.log(this.userService.createUser(this.user));
-    this.userService.getUsers();
+    // this.userService.getUsers();
   }
 
 

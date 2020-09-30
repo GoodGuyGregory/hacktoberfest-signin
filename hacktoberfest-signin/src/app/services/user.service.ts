@@ -39,7 +39,7 @@ export class UserService {
     }
     // Pushes the user to the array of existing users
     this.currentUsers.push(newUser);
-    return `added ${user.username} to currentUsers`;
+    return `added ${user.username} to currentUsers ${this.currentUsers.length}`;
   }
 
 
@@ -58,7 +58,7 @@ export class UserService {
 
   // getLanguageData: 
   // Returns the elements inside of the currentUsers[] for languagesData Component 
-  getLanguageData() {
-
+  getLanguageData(): Array<User> {
+    return this.currentUsers;
   }
 }

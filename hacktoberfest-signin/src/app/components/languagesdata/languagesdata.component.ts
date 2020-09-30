@@ -1,7 +1,7 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 import { User } from 'src/app/models/User';
 // Services:
-import { currentUsers, UserService } from 'src/app/services/user.service';
+import { UserService } from 'src/app/services/user.service';
 
 
 @Component({
@@ -13,15 +13,16 @@ import { currentUsers, UserService } from 'src/app/services/user.service';
 
 export class LanguagesdataComponent implements OnInit {
   // gets service data
-  languageData: currentUsers[];
+  languageData: User[];
 
   constructor(private userService: UserService) {
     // set service data
-    this.languageData = userService.getLanguageData();
+    this.languageData
   }
 
   ngOnInit(): void {
-
+    // Generate the Users data for the component to load
+    this.languageData = this.userService.getLanguageData();
   }
 
 }
