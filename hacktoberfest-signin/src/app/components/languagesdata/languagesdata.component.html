@@ -1,6 +1,7 @@
 <div class="graph-container">
     <dx-polar-chart id="chart" [useSpiderWeb]="true" [dataSource]="languageData" color="#f3f3f3">
-        <dxi-series valueField="{user.username}" name="{user.username}" *ngFor="let user of languageData"></dxi-series>
+        <dxi-series valueField="" name="Python">
+        </dxi-series>
         <dxo-common-series-settings type="line" grid="visible"></dxo-common-series-settings>
         <dxo-tooltip [enabled]="true"></dxo-tooltip>
     </dx-polar-chart>
