@@ -22,14 +22,9 @@ export class LanguagesdataComponent implements OnInit {
 
   ngOnInit(): void {
     // Generate the Users data for the component to load
-    this.userService.user$.subscribe(x => {
-      this.languageData = x
-
-    });
     // check new users etc.
-    this.userService.getUsers();
+    this.languageData = this.userService.getLanguageData();
 
-    console.log(this.languageData);
   }
 
 }
