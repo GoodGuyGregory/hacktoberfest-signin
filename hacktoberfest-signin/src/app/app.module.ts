@@ -16,6 +16,7 @@ import { LanguagesdataComponent } from './components/languagesdata/languagesdata
 
 // DevExtreme Modules:
 import { DxPolarChartModule } from 'devextreme-angular';
+import { UserService } from './services/user.service';
 
 
 @NgModule({

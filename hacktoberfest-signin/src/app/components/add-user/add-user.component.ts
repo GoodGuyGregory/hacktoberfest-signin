@@ -119,7 +119,7 @@ export class AddUserComponent implements OnInit {
     // console.log(JSON.stringify(this.user));
     // Pushed User to CurrentUsers Array
     console.log(`Pushing ${JSON.stringify(this.user)} to the currentUsers Array`);
-    console.log(this.userService.createUsers(this.user));
+    this.userService.createUsers(this.user);
   }
 
 

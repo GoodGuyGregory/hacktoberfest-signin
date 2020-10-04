@@ -12,7 +12,6 @@ export class UserService {
 
   user: User;
   currentUsers: User[];
-  existingUsers: [];
   userDataUrl: string;
 
   private readonly usersubject: Subject<User[]>
@@ -22,13 +21,14 @@ export class UserService {
 
   constructor(private http: HttpClient) {
     this.currentUsers = [];
-    this.existingUsers;
     this.userDataUrl = '../../assets/data/users.json';
 
-    // stores inside the service to add new data
-    // this.usersubject = new Subject<User[]>()
+    // Stores data and can emit submission data to subscribers of the subject
+    this.usersubject = new Subject<User[]>();
+    // makes the subject and observable 
+    this.user$ = this.usersubject.asObservable();
 
-    // this.user$ = this.usersubject.asObservable();
+
   }
 
   // GET request from the JSON data
@@ -43,7 +43,6 @@ export class UserService {
   createUsers(user: User): void {
     // gets all of the user data hosted locally and adds it to the array 
     this.getUsers().subscribe((data) => {
-      console.log(JSON.stringify(data));
       this.currentUsers = data
 
       // creates a new User from the input provided
@@ -64,17 +63,20 @@ export class UserService {
       }
       // Pushes the user to the array of existing users
       this.currentUsers.push(newUser);
-      console.log("Subscribe: ")
-      console.log(JSON.stringify(this.currentUsers));
-      // return `added ${user.username} to currentUsers array of size ${this.currentUsers.length}`;
+      // console.log(JSON.stringify(this.currentUsers));
+      console.log(`added ${user.username} to currentUsers array of size ${this.currentUsers.length}`);
+
     });
   }
 
   // getLanguageData: 
   // Returns the elements inside of the currentUsers[] for languagesData Component 
-  getLanguageData(): Array<User> {
+  getLanguageData(): Subject<User[]> {
     // Parses the Array in order to pass the data elements needed in a format
     // similar to the languages service data.
-    return this.currentUsers;
+    // sets the subject to the contents of the currentUsers Array
+    this.usersubject.next(this.currentUsers);
+    // returns the subject for subscription in language component
+    return this.usersubject;
   }
 }
