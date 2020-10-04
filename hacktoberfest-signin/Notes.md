@@ -35,8 +35,14 @@
 
 [Video Series Explaining the concepts](https://www.youtube.com/watch?v=vj0kUzKOgGQ)
 
+[When to Subscribe in Services](https://indepth.dev/rxjs-in-angular-when-to-subscribe-rarely/)
+
 **Async and JS behavior for Sleeping**
 
 [Article](https://www.sitepoint.com/delay-sleep-pause-wait/)
 
 [Await and Async Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await)
+
+**Angular Software Architecture Models**
+
+[Article on building scalable architecture](https://angular-academy.com/angular-architecture-best-practices/)
