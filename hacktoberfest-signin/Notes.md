@@ -30,3 +30,23 @@
 **Problems with Radio Button Databinding**
 
 [Databinding for Radio Buttons](https://stackoverflow.com/questions/43095710/how-correctly-bind-data-to-radio-buttons-in-angular2)
+
+**HTTP GET and Observables**
+
+[Video Series Explaining the concepts](https://www.youtube.com/watch?v=vj0kUzKOgGQ)
+
+[When to Subscribe in Services](https://indepth.dev/rxjs-in-angular-when-to-subscribe-rarely/)
+
+**Async and JS behavior for Sleeping**
+
+[Article](https://www.sitepoint.com/delay-sleep-pause-wait/)
+
+[Await and Async Functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await)
+
+**Angular Software Architecture Models**
+
+[Article on building scalable architecture](https://angular-academy.com/angular-architecture-best-practices/)
+
+**Sharing Data Between Components and Services**
+
+[Fireship IO](https://fireship.io/lessons/sharing-data-between-angular-components-four-methods/)

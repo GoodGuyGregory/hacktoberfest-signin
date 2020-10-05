@@ -1,28 +1,29 @@
 import { Component, OnInit, NgModule } from '@angular/core';
+import { User } from 'src/app/models/User';
+import { Observable } from 'rxjs'
+// Services:
+import { UserService } from 'src/app/services/user.service';
 
-// Services
-import { LanguagesData, LanguageService } from '../../services/languages.service';
 
 @Component({
   selector: 'app-languagesdata',
   templateUrl: './languagesdata.component.html',
   styleUrls: ['./languagesdata.component.scss'],
-  providers: [LanguageService]
 })
 
-export class LanguagesdataComponent implements OnInit {
+export class LanguagesdataComponent {
   // gets service data
-  languageData: LanguagesData[];
+  languageData: User[];
 
-  constructor(private languageService: LanguageService) {
-    // set service data
-    this.languageData = languageService.getLanguageData();
+  constructor(private userService: UserService) {
+
   }
 
   ngOnInit(): void {
+    // Generate combined user data of all users in the JSON and the new incoming user into the app
+    this.userService.user$.subscribe(languageData => this.languageData = languageData);
 
   }
-
 }
 
 
