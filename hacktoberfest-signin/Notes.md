@@ -46,3 +46,7 @@
 **Angular Software Architecture Models**
 
 [Article on building scalable architecture](https://angular-academy.com/angular-architecture-best-practices/)
+
+**Sharing Data Between Components and Services**
+
+[Fireship IO](https://fireship.io/lessons/sharing-data-between-angular-components-four-methods/)
