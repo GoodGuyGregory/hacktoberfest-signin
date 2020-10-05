@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { User } from '../models/User';
 import { HttpClient } from '@angular/common/http';
-import { Observable, Subject } from 'rxjs';
-
+import { BehaviorSubject, Observable } from 'rxjs';
 
 
 @Injectable({
@@ -14,8 +13,8 @@ export class UserService {
   currentUsers: User[];
   userDataUrl: string;
 
-  private readonly usersubject: Subject<User[]>
-  public readonly user$: Observable<User[]>
+  private usersubject: BehaviorSubject<User[]>;
+  public user$: Observable<User[]>;
 
   // TODO: HTTPservices for JSON
 
@@ -24,10 +23,10 @@ export class UserService {
     this.userDataUrl = '../../assets/data/users.json';
 
     // Stores data and can emit submission data to subscribers of the subject
-    this.usersubject = new Subject<User[]>();
+    this.usersubject = new BehaviorSubject<User[]>(this.currentUsers);
+
     // makes the subject and observable 
     this.user$ = this.usersubject.asObservable();
-
 
   }
 
@@ -65,18 +64,13 @@ export class UserService {
       this.currentUsers.push(newUser);
       // console.log(JSON.stringify(this.currentUsers));
       console.log(`added ${user.username} to currentUsers array of size ${this.currentUsers.length}`);
-
+      this.getLanguageData(this.currentUsers);
     });
   }
 
   // getLanguageData: 
   // Returns the elements inside of the currentUsers[] for languagesData Component 
-  getLanguageData(): Subject<User[]> {
-    // Parses the Array in order to pass the data elements needed in a format
-    // similar to the languages service data.
-    // sets the subject to the contents of the currentUsers Array
-    this.usersubject.next(this.currentUsers);
-    // returns the subject for subscription in language component
-    return this.usersubject;
+  getLanguageData(currentUsers: User[]) {
+    this.usersubject.next(currentUsers);
   }
 }

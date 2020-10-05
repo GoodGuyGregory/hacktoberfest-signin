@@ -13,17 +13,15 @@ import { UserService } from 'src/app/services/user.service';
 
 export class LanguagesdataComponent {
   // gets service data
-  public languageData$: Observable<User[]>;
+  languageData: User[];
 
   constructor(private userService: UserService) {
-    this.languageData$ = this.userService.user$;
 
   }
 
   ngOnInit(): void {
-    // Generate the Users data for the component to load
-    // check new users etc.
-    // this.languageData = this.userService.getLanguageData();
+    // Generate combined user data of all users in the JSON and the new incoming user into the app
+    this.userService.user$.subscribe(languageData => this.languageData = languageData);
 
   }
 }
