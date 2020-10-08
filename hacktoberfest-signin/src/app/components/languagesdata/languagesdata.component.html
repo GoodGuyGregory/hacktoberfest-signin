@@ -1,8 +1,11 @@
 <div class="graph-container">
     <dx-polar-chart id="chart" [useSpiderWeb]="true" [dataSource]="languageData" color="#f3f3f3">
-        <dxi-series valueField="{languageData.username}" name="{languageData.username}"></dxi-series>
+        <div *ngFor="let user of currentUsers">
+            <dxi-series valueField="{user}" name="{user}"></dxi-series>
+        </div>
         <dxo-common-series-settings type="line" grid="visible"></dxo-common-series-settings>
         <dxo-tooltip [enabled]="true"></dxo-tooltip>
     </dx-polar-chart>
-    <div class="test-data" *ngIf="languageData">{{ languageData | json }}</div>
+    <div class="test-data" *ngIf="languageData">{{ languageData | json }}
+    </div>
 </div>

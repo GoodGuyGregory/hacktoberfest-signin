@@ -23,7 +23,7 @@ export class UserService {
     this.userDataUrl = '../../assets/data/users.json';
 
     // Stores data and can emit submission data to subscribers of the subject
-    this.usersubject = new BehaviorSubject<User[]>(this.currentUsers);
+    this.usersubject = new BehaviorSubject<User[]>(this.currentUsers as User[]);
 
     // makes the subject and observable 
     this.user$ = this.usersubject.asObservable();
