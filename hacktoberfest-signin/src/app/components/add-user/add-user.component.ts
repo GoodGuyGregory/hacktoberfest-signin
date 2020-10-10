@@ -28,6 +28,7 @@ export class AddUserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   findUser(data) {
     this.searchUser = !this.searchUser;
     // TODO Confirm User Name Matches String Sent from databinding
@@ -121,6 +122,5 @@ export class AddUserComponent implements OnInit {
     console.log(`Pushing ${JSON.stringify(this.user)} to the currentUsers Array`);
     this.userService.createUsers(this.user);
   }
-
 
 }
