@@ -1,15 +1,25 @@
 * {
-    background-color: #DE541E;
-    padding: 25px;
+    background-color: #93c2db;
 }
 
-h1 {
-    font-size: 3em;
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+
+    img {
+        border-radius: 50%;
+    }
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        padding: 50px;
+        margin-left: -20px;
     
-    text-align: center;
-    
-    a {
-        text-decoration: none;
-        color: #f3f3f3;
+        a {
+            text-decoration: none;
+            color: #d318a5;
+        }
     }
 }

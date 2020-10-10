@@ -1,3 +1,8 @@
+$font-color:#f3f3f3;
+$button-color: #d318a5;
+$button-color-hover: #f786db;
+$button-text-hover:  rgb(16, 10, 10);
+
 .find-user {
     border-radius: 25px;
     
@@ -6,14 +11,15 @@
         flex-direction: column;
         
         align-items: center; 
-        padding: 50px;
+        padding: 60px;
         border-radius: 10px;
         margin: 100px 25px;
     
         p {
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1.5em;
             padding: 15px;
+            color: $font-color;
         }
     
         input[type="text"] {
@@ -21,22 +27,23 @@
             padding: 8px;
             margin: 20px;
             width: 255px;
-            background-color: #D6D6B1;
+            background-color: $font-color;
             border-radius: 15px;
             border: none;
         }
     
         input[type="submit"] {
-            background-color: #DE541E;
+            background-color: $button-color;
             border: none;
             border-radius: 15px;
             width: 125px;
             padding: 10px;
             font-weight: bold; 
-            color: #f3f3f3;
+            color: $font-color;
             
             &:hover {
-                background-color: #d88e3f;
+                color:$button-text-hover;
+                background-color: $button-color-hover;
             }
         }
     }
@@ -57,6 +64,7 @@
         
         p {
             font-size: 25px;
+            color: $font-color;
         }
 
         .github-avatar{ 
@@ -92,7 +100,7 @@
                     &:last-of-type {
                         align-items: center;
                         flex-direction: row;
-                        background-color: #df6060;
+                        background-color: $button-color;
                         border: none;
                         border-radius: 15px;
                         width: 70px;
@@ -102,7 +110,8 @@
                         color: #f3f3f3;
                         
                         &:hover {
-                            background-color: #d53518;
+                            color: $button-text-hover;
+                            background-color: $button-color-hover;
                         }
                     }
                 }
@@ -128,6 +137,7 @@
         .header-text {
             font-size: 20px;
             padding: 25px;
+            color: $font-color;
         }
 
         form {
@@ -136,10 +146,11 @@
                 font-family: 'Quicksand';
                 padding: 5px;
                 font-weight: 200;
+                color: $font-color;
             }
 
             .confirm-languages {
-                background-color: #DE541E;
+                background-color: $button-color;
                 border: none;
                 border-radius: 15px;
                 width: 70px;
@@ -147,11 +158,16 @@
                 padding: 10px;
                 font-weight: bold; 
                 color: #f3f3f3;
+
+                &:hover {
+                    
+                     background-color: $button-color-hover;
+                }
             }
         }
     }
 }
 
 * {
-    background-color: #878472;;
+    background-color: #183d5d;
 }

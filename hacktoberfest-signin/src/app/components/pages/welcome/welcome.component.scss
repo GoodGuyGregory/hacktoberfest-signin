@@ -13,21 +13,33 @@ $font-color:#f3f3f3;
 
     h2 {
         margin: 15px;
-        font-size: 1.5em;
+        font-size: 2.5em;
         color: $font-color;
         font-family: 'Quicksand';
     }
 
-    p {
-        color: $font-color;
-        font-family: 'Quicksand';
-        font-size: 16px;
+    .text-container {
+        width: 45%;
+        p {
+            color: $font-color;
+            font-family: 'Quicksand';
+            font-size: 16px;
+            padding: 5px;
+            text-align: str-length($string: "500");
+        }
+    
+        a .documentation {
+            font-family: 'Quicksand';
+            font-size: 16px;
+            color: #ff8ae2;
+        }
     }
-
-    a {
-        font-family: 'Quicksand';
-        margin: 15px;
-        font-size: 1.5em;
-    }
+        a {
+            font-family: 'Quicksand';
+            margin: 15px;
+            font-size: 1.5em;
+            color: #ff8ae2;
+        }
+  
 }
 
