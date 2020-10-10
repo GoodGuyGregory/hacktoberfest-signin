@@ -17,34 +17,35 @@ export class LanguagesdataComponent {
 
   constructor(private userService: UserService) {
     this.currentUsers;
+    this.languageData;
   }
 
   ngOnInit(): void {
     // gets the user data from the subject
     this.getUserData();
-    this.getUsernames();
   }
 
   // Collect Language Data args for DEVExtreme:
   getUserData() {
     this.userService.user$.subscribe(userData => {
       if (userData.length !== 0) {
-        console.log("Testing Connection:")
-        console.log('================');
+        // console.log("Testing Connection:")
+        // console.log('================');
+        let foundUsers = [];
         for (let i = 0; i < userData.length; i++) {
           console.log(userData[i].username);
-
+          foundUsers.push(userData[i].username);
         }
+        this.currentUsers = foundUsers;
+        // console.log("Keys from the Users Object:");
+        // console.log("=============================");
 
-        console.log("Keys from the Users Object:");
-        console.log("=============================");
-
-        console.log(Object.keys(userData[1].languages));
+        // console.log(Object.keys(userData[1].languages));
         let usersLangData = Object.keys(userData[1].languages);
-        console.log(" ");
+        // console.log(" ");
 
-        console.log("Creates an Array of Objects with each Language:");
-        console.log("===============================================");
+        // console.log("Creates an Array of Objects with each Language:");
+        // console.log("===============================================");
         let LanguageData = [];
         usersLangData.forEach(element => {
           // console.log("Getting Elements...");
@@ -52,23 +53,21 @@ export class LanguagesdataComponent {
           let languageArgs = {};
           // console.log(`appending ${element} to their own object`);
           languageArgs["arg"] = element;
-          console.log(JSON.stringify(languageArgs));
+          // console.log(JSON.stringify(languageArgs));
           LanguageData.push(languageArgs);
         })
-
-        console.log(" ");
+        // console.log(" ");
         // Checking contents of userLangData:
-        console.log("Elements inside of LanguageData");
-        console.log("=====================================");
+        // console.log("Elements inside of LanguageData");
+        // console.log("=====================================");
         LanguageData.forEach(lang => {
-          console.log(lang.arg);
+          // console.log(lang.arg);
         })
 
-        console.log(" ");
+        // console.log(" ");
         // Combine UserData where the arg matches the language preference:
-        console.log("Combine User language values with args:");
-        console.log("=========================================");
-
+        // console.log("Combine User language values with args:");
+        // console.log("=========================================");
 
         userData.forEach(user => {
           for (let lang in user.languages) {
@@ -79,32 +78,16 @@ export class LanguagesdataComponent {
             }
           }
         });
-        console.log(" ");
-        console.log("Contents of LanguageData:");
-        console.log("============================");
-        LanguageData.forEach(element => {
-          console.log(element);
-        });
+        // console.log(" ");
+        // console.log("Contents of LanguageData:");
+        // console.log("============================");
+        // LanguageData.forEach(element => {
+        //   // console.log(element);
+        // });
 
         this.languageData = LanguageData;
       }
     })
   }
 
-  getUsernames() {
-    this.userService.user$.subscribe(userData => {
-      if (userData.length !== 0) {
-        console.log("Gathering Usernames:")
-        console.log('================');
-        for (let i = 0; i < userData.length; i++) {
-          console.log(userData[i].username);
-          this.currentUsers.push(userData[i].username);
-        }
-      }
-    });
-  }
-
 }
-
-
-
