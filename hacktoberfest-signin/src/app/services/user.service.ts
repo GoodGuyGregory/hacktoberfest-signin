@@ -62,7 +62,7 @@ export class UserService {
       }
       // Pushes the user to the array of existing users
       this.currentUsers.push(newUser);
-      // console.log(JSON.stringify(this.currentUsers));
+      console.log(JSON.stringify(this.currentUsers));
       console.log(`added ${user.username} to currentUsers array of size ${this.currentUsers.length}`);
       this.getLanguageData(this.currentUsers);
     });
