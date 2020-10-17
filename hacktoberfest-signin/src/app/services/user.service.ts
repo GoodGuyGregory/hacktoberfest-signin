@@ -20,7 +20,7 @@ export class UserService {
 
   constructor(private http: HttpClient) {
     this.currentUsers = [];
-    this.userDataUrl = '../../assets/data/users.json';
+    this.userDataUrl = './assets/data/users.json';
 
     // Stores data and can emit submission data to subscribers of the subject
     this.usersubject = new BehaviorSubject<User[]>(this.currentUsers as User[]);
