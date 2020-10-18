@@ -4,34 +4,41 @@
 
  ### Start the project
 
-  follow the starting instructions inside of the repo in `hacktoberfest-signin/`
+**FORK** this Repo: 
 
-  inside of the `hacktoberfest-signin/` directory run `ng serve` this should open the project after compiling on your local computer open a browser window and type `localhost:4200` if this was compiled sucessfully you should see this in any browser window.
+install the project locally from your fork
 
-  ![app startup screen](./img/welcome-screen.png)
+install the necessary dependencies inside of the project 
 
- ### Complete the Sign-in Process
- complete the form with your username from github 
+`npm install `
 
-  ![image of username data](./img/confirm-image.png)
+inside of the `hacktoberfest-signin/` directory run `ng serve` this should open the project after compiling on your local computer open a browser window and type `localhost:4200` if this was compiled sucessfully you should see this in any browser window but this tutorial is specifically for **Google Chrome**.
 
-  add your language preference data as below:
+![app startup screen](./img/welcome-screen.png)
 
-  ![image of userpreference data](./img/userlang-preferences.png)
+### Complete the Sign-in Process
+complete the form with your username from github 
 
-  before going any further keep the screen on the graph and view your awesome preferences compared to other developers.
+![image of username data](./img/confirm-image.png)
 
-  ![userdata image](./img/sample-user.png)
+add your language preference data as below:
+
+![image of userpreference data](./img/userlang-preferences.png)
+
+before going any further keep the screen on the graph and view your awesome preferences compared to other developers.
+
+![userdata image](./img/sample-user.png)
 
 ### Add Your User Data to the Repo with a Pull Request 
   
-make a new branch with your username  
-
-![create your branch](./img/create-branch.png)
 
 before going any further open the javascript console for your data.
 
 ![javascript console for user data](./img/sample-user-console.png)
+
+make a new branch with your username, then checkout that branch and continue below 
+
+![create your branch](./img/create-branch.png)
 
 copy your `username` data from the javascript array and add it to the project. find the assets folder inside of the project directory
 
@@ -41,7 +48,7 @@ add your user data into the `users.json` file **(from the JS console in the brow
 
 ![user addition](./img/sample-user-in-json.png)
 
-commit your changes to your local branch and push them to the upstream branch.
+commit your changes to your local branch and push them to the upstream branch. then open a Pull request comparing your fork with the master branch of this repository
 
 `HAPPY CODING!`
 
