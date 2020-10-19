@@ -28,5 +28,17 @@
             "javascript": 1,
             "c#": 1
         }
-  }
+  },{
+      "heroimage":"https://avatars2.githubusercontent.com/u/22027039?v=4",
+      "username":"b-yogesh",
+      "languages":{
+          "python":5,
+          "java":5,
+          "c++":4,
+          "f#":0,
+          "ruby":1,
+          "swift":1,
+          "go":1,
+          "javascript":5,
+          "c#":4}}
 ]
