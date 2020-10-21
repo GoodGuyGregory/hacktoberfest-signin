@@ -43,5 +43,20 @@
       "javascript": 2,
       "c#": 4
     }
+  },
+  {
+    "heroimage": "https://avatars1.githubusercontent.com/u/10249208?v=4",
+    "username": "iketiunn",
+    "languages": {
+      "python": 1,
+      "java": 1,
+      "c++": 1,
+      "f#": 2,
+      "ruby": 3,
+      "swift": 1,
+      "go": 3,
+      "javascript": 5,
+      "c#": 1
+    }
   }
 ]
