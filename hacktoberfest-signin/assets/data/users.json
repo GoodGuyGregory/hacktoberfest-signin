@@ -1,17 +1,123 @@
+
 [
-    {
-        "heroimage": "https://avatars0.githubusercontent.com/u/36649901?v=4",
-        "username": "GoodGuyGregory",
-        "languages": {
-            "python": 4,
-            "java": 3,
-            "c++": 3,
-            "f#": 2,
-            "ruby": 4,
-            "swift": 1,
-            "go": 3,
-            "javascript": 4,
-            "c#": 3
-        }
+  {
+    "heroimage": "https://avatars0.githubusercontent.com/u/36649901?v=4",
+    "username": "GoodGuyGregory",
+    "languages": {
+      "python": 4,
+      "java": 3,
+      "c++": 3,
+      "f#": 2,
+      "ruby": 4,
+      "swift": 1,
+      "go": 3,
+      "javascript": 4,
+      "c#": 3
     }
+  },
+  {
+    "heroimage": "https://avatars3.githubusercontent.com/u/14313289?v=4",
+    "username": "AshKemp",
+    "languages": {
+      "python": 2,
+      "java": 3,
+      "c++": 1,
+      "f#": 1,
+      "ruby": 1,
+      "swift": 1,
+      "go": 1,
+      "javascript": 4,
+      "c#": 1
+    }
+  },
+  {
+    "heroimage": "https://avatars1.githubusercontent.com/u/46792249?v=4",
+    "username": "Gourav Khunger",
+    "languages": {
+      "python": 1,
+      "java": 5,
+      "c++": 4,
+      "f#": 1,
+      "ruby": 1,
+      "swift": 1,
+      "go": 1,
+      "javascript": 1,
+      "c#": 1
+    }
+  },
+  {
+    "heroimage": "https://avatars2.githubusercontent.com/u/53916931?v=4",
+    "username": "ecrax",
+    "languages": {
+      "python": 4,
+      "java": 5,
+      "c++": 2,
+      "f#": 0,
+      "ruby": 0,
+      "swift": 0,
+      "go": 0,
+      "javascript": 2,
+      "c#": 4
+    }
+  },
+  {
+    "heroimage": "https://avatars3.githubusercontent.com/u/47711025?v=4",
+    "username": "nobalpha",
+    "languages": {
+      "python": 2,
+      "java": 0,
+      "c++": 1,
+      "f#": 0,
+      "ruby": 0,
+      "swift": 0,
+      "go": 0,
+      "javascript": 2,
+      "c#": 2
+  }
+  },
+ {
+    "heroimage": "https://avatars1.githubusercontent.com/u/10249208?v=4",
+    "username": "iketiunn",
+    "languages": {
+      "python": 1,
+      "java": 1,
+      "c++": 1,
+      "f#": 2,
+      "ruby": 3,
+      "swift": 1,
+      "go": 3,
+      "javascript": 5,
+      "c#": 1
+    }
+  },
+  {"heroimage":"https://avatars1.githubusercontent.com/u/48777600?v=4",
+   "username":"jeffusername",
+   "languages":{
+     "python":3,
+     "java":4,
+     "c++":2,
+     "f#":1,
+     "ruby":0,
+     "swift":0,
+     "go":0,
+     "javascript":2,
+     "c#":2
+     }
+  },
+{
+      "heroimage":"https://avatars2.githubusercontent.com/u/22027039?v=4",
+      "username":"b-yogesh",
+      "languages":{
+          "python":5,
+          "java":5,
+          "c++":4,
+          "f#":0,
+          "ruby":1,
+          "swift":1,
+          "go":1,
+          "javascript":5,
+          "c#":4
+      }
+}
 ]
+
