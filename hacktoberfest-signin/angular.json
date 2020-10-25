@@ -128,7 +128,4 @@
     }
   },
   "defaultProject": "hacktoberfest-signin",
-  "cli": {
-    "analytics": "bfe2962d-9e80-4457-8395-0798978d3971"
-  }
 }
