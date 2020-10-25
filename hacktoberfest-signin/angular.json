@@ -129,3 +129,7 @@
   },
   "defaultProject": "hacktoberfest-signin",
 }
+  "cli": {
+    "analytics": false
+  }
+}
