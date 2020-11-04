@@ -1,14 +1,16 @@
-# Hacktoberfest Signin
+<p align="center">
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=200&section=header&text=Hacktoberfest%20Signin&fontSize=70&fontAlignY=55" />
+</p>
 
 ## How to Contribute for your First PR
 
  ### Start the project
 
-**FORK** this Repo: 
+**FORK** this Repo:
 
 install the project locally from your fork
 
-install the necessary dependencies inside of the project 
+install the necessary dependencies inside of the project
 
 `npm install `
 
@@ -17,7 +19,7 @@ inside of the `hacktoberfest-signin/` directory run `ng serve` this should open 
 ![app startup screen](./img/welcome-screen.png)
 
 ### Complete the Sign-in Process
-complete the form with your username from github 
+complete the form with your username from github
 
 ![image of username data](./img/confirm-image.png)
 
@@ -29,14 +31,14 @@ before going any further keep the screen on the graph and view your awesome pref
 
 ![userdata image](./img/sample-user.png)
 
-### Add Your User Data to the Repo with a Pull Request 
-  
+### Add Your User Data to the Repo with a Pull Request
+
 
 before going any further open the javascript console for your data.
 
 ![javascript console for user data](./img/sample-user-console.png)
 
-make a new branch with your username, then checkout that branch and continue below 
+make a new branch with your username, then checkout that branch and continue below
 
 ![create your branch](./img/create-branch.png)
 
@@ -54,4 +56,4 @@ commit your changes to your local branch and push them to the upstream branch. t
 
 ### Building a Community
 
-Invite others to add their language data and I will continue working on the project throughout `Hacktoberfest` to add more functionality. 
+Invite others to add their language data and I will continue working on the project throughout `Hacktoberfest` to add more functionality.
