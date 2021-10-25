@@ -1,5 +1,4 @@
-
-$font-color:#f3f3f3;
+@import "src/styles";
 
 * {
     display: flex;
@@ -14,14 +13,14 @@ $font-color:#f3f3f3;
     h2 {
         margin: 15px;
         font-size: 2.5em;
-        color: $font-color;
+        color: $hack-TitleColor;
         font-family: 'Quicksand', serif;
     }
 
     .text-container {
         width: 45%;
         p {
-            color: $font-color;
+            color: $hack-TextColor;
             font-family: 'Quicksand', serif;
             font-size: 16px;
             padding: 5px;

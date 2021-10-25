@@ -1,27 +1,29 @@
-$font-color:#f3f3f3;
+@import "src/styles";
+
+$font-color: #f3f3f3;
 $button-color: #d318a5;
 $button-color-hover: #f786db;
 $button-text-hover:  rgb(16, 10, 10);
 
 .find-user {
     border-radius: 25px;
-    
+
     .user-form {
         display: flex;
         flex-direction: column;
-        
-        align-items: center; 
+
+        align-items: center;
         padding: 60px;
         border-radius: 10px;
         margin: 100px 25px;
-    
+
         p {
             text-align: center;
             font-size: 1.5em;
             padding: 15px;
             color: $font-color;
         }
-    
+
         input[type="text"] {
             text-align: center;
             padding: 8px;
@@ -31,16 +33,16 @@ $button-text-hover:  rgb(16, 10, 10);
             border-radius: 15px;
             border: none;
         }
-    
+
         input[type="submit"] {
             background-color: $button-color;
             border: none;
             border-radius: 15px;
             width: 125px;
             padding: 10px;
-            font-weight: bold; 
+            font-weight: bold;
             color: $font-color;
-            
+
             &:hover {
                 color:$button-text-hover;
                 background-color: $button-color-hover;
@@ -56,18 +58,18 @@ $button-text-hover:  rgb(16, 10, 10);
     .user-form {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         padding: 50px;
         border-radius: 10px;
         margin: 100px 25px;
         text-align: center;
-        
+
         p {
             font-size: 25px;
             color: $font-color;
         }
 
-        .github-avatar{ 
+        .github-avatar{
 
 
             img {
@@ -81,7 +83,7 @@ $button-text-hover:  rgb(16, 10, 10);
             .found-name {
                 font-size: 20px;
             }
-            
+
             button {
                     align-items: center;
                     flex-direction: row;
@@ -91,9 +93,9 @@ $button-text-hover:  rgb(16, 10, 10);
                     width: 70px;
                     margin: 25px 5px 15px;
                     padding: 10px;
-                    font-weight: bold; 
+                    font-weight: bold;
                     color: #f3f3f3;
-                    
+
                     &:hover {
                         background-color: #3fd87c;
                     }
@@ -106,9 +108,9 @@ $button-text-hover:  rgb(16, 10, 10);
                         width: 70px;
                         margin: 25px 5px 15px;
                         padding: 10px;
-                        font-weight: bold; 
+                        font-weight: bold;
                         color: #f3f3f3;
-                        
+
                         &:hover {
                             color: $button-text-hover;
                             background-color: $button-color-hover;
@@ -116,8 +118,8 @@ $button-text-hover:  rgb(16, 10, 10);
                     }
                 }
             }
-                        
-                    
+
+
         }
     }
 
@@ -127,12 +129,12 @@ $button-text-hover:  rgb(16, 10, 10);
     .language-form {
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
         padding: 50px;
         border-radius: 10px;
         margin: 100px 25px;
         text-align: center;
-        
+
 
         .header-text {
             font-size: 20px;
@@ -141,9 +143,9 @@ $button-text-hover:  rgb(16, 10, 10);
         }
 
         form {
-                
+
             p {
-                font-family: 'Quicksand';
+              font-family: 'Quicksand', serif;
                 padding: 5px;
                 font-weight: 200;
                 color: $font-color;
@@ -156,11 +158,11 @@ $button-text-hover:  rgb(16, 10, 10);
                 width: 70px;
                 margin: 25px 5px 15px;
                 padding: 10px;
-                font-weight: bold; 
+                font-weight: bold;
                 color: #f3f3f3;
 
                 &:hover {
-                    
+
                      background-color: $button-color-hover;
                 }
             }
@@ -169,5 +171,5 @@ $button-text-hover:  rgb(16, 10, 10);
 }
 
 * {
-    background-color: #183d5d;
+    background-color: $hock-ComponentBackground;
 }

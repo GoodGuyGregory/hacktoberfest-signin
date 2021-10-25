@@ -1,9 +1,16 @@
+// Yearly color theme
+$hack-Background: #b53a25;
+$hack-TitleColor: #2b3531;
+$hock-ComponentBackground: #0b5006;
+$hack-TextColor: #677662;
+$hack-UniversalBackground: #f4f0e1;
+
 * {
     // Setts Universal Sizing
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background:#072540;
+    background: $hack-UniversalBackground;
 }
 
 // Custom Added Fonts
@@ -18,9 +25,9 @@
 }
 
 .PressStart {
-    font-family: PressStart2P;
+  font-family: PressStart2P, serif;
 }
 
 .Quicksand {
-    font-family: Quicksand;
+    font-family: Quicksand, serif;
 }

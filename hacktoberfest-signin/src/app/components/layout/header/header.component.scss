@@ -1,11 +1,13 @@
+@import "src/styles";
+
 * {
-    background-color: #93c2db;
+    background-color: $hack-Background;
 }
 
 .header-container {
     display: flex;
     justify-content: space-around;
-    padding: 25px;
+    padding: 2rem;//25px;
 
     img {
         border-radius: 50%;
@@ -14,12 +16,12 @@
     h1 {
         font-size: 3em;
         text-align: center;
-        padding: 50px;
+        padding: 2rem;//50px;
         margin-left: -20px;
-    
+
         a {
             text-decoration: none;
-            color: #d318a5;
+            color: $hack-TitleColor;
         }
     }
 }
