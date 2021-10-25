@@ -15,31 +15,31 @@ $font-color:#f3f3f3;
         margin: 15px;
         font-size: 2.5em;
         color: $font-color;
-        font-family: 'Quicksand';
+        font-family: 'Quicksand', serif;
     }
 
     .text-container {
         width: 45%;
         p {
             color: $font-color;
-            font-family: 'Quicksand';
+            font-family: 'Quicksand', serif;
             font-size: 16px;
             padding: 5px;
             text-align: str-length($string: "500");
         }
-    
+
         a .documentation {
-            font-family: 'Quicksand';
+            font-family: 'Quicksand', serif;
             font-size: 16px;
             color: #ff8ae2;
         }
     }
         a {
-            font-family: 'Quicksand';
+            font-family: 'Quicksand', serif;
             margin: 15px;
             font-size: 1.5em;
             color: #ff8ae2;
         }
-  
+
 }
 
